@@ -1,0 +1,12 @@
+package com.jackieloven001.fitme;
+
+import android.app.Activity;
+
+public class SharedPrefs extends Activity{
+
+	public static final String PREFS_NAME = "MyPreferencesFile";
+	
+			
+	
+	
+}

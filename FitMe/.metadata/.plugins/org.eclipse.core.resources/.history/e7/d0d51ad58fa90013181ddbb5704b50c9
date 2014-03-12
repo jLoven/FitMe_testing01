@@ -1,0 +1,31 @@
+package com.jackieloven001.fitme;
+
+import android.app.Activity;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class Second extends Activity {
+
+	public static final String PREFS_NAME = "MyPreferencesFile";
+
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.display_prefs);
+		// TODO Auto-generated method stub
+
+		TextView tvName = (TextView) findViewById(R.id.textViewName);
+		
+
+		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+		// same name
+
+		tvName.setText(settings.getString("name", "Jackie"));
+		// default value is Jackie if it can't find a name
+		tvEmail.setText(settings.getString("email", "jloven@yolo.com"));
+
+	}
+
+}

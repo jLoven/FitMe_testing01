@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/TextBox1"
+        android:textSize="40sp"
+        android:textColor="#000000" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:completionThreshold="1"
+        android:ems="20"
+        android:gravity="center"
+        android:hint="@string/Hint1"
+        android:paddingRight="5dp"
+        android:textSize="40sp" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+</LinearLayout>

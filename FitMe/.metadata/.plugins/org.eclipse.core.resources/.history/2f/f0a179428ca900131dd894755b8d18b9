@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FitMe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="TextBox1">What is the brand of your favorite jeans?</string>
+    <string name="Hint1">Aéropostale, Levi\'s, etc.</string>
+
+    <string-array name="countries_array">
+        <item>1st Kiss</item>
+        <item>Aéropostale</item>
+        <item>Danskin Now</item>
+        <item>Faded Glory</item>
+        <item>Jordache</item>
+        <item>Kirra</item>
+        <item>L.E.I</item>
+        <item>No Boundaries</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,34 @@
+package com.jackieloven001.fitme;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+
+public class SplashScreen extends Activity {
+
+	public static final String PREFS_NAME = "MyPreferencesFile";
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.pick_size);
+		
+		final AutoCompleteTextView name = (AutoCompleteTextView) findViewById(R.id.editText1);
+		
+		AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView1);
+		String[] countries = getResources().getStringArray(R.array.countries_array);
+		ArrayAdapter<String> adapter = 
+		        new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, countries);
+		textView.setAdapter(adapter);
+	}
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+	}
+
+}
+
